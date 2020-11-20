@@ -18,6 +18,18 @@ Below is the deployed react-app link,
  Please observe, so that you can see that values have been mapping on to the graph.
  
  output-2: ![output-2](https://user-images.githubusercontent.com/47274869/99747765-30493d80-2b01-11eb-9d71-c5f66b6eac24.jpg)
+ 
+
+# Steps Followed In Creating React-Chart-App
+
+
+# Steps Followed In Creating Aws-GoLang-Crud-DynamoDB
+
+
+# Referernces
+
+
+
 
  
  
