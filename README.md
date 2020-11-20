@@ -28,24 +28,27 @@ Below is the deployed react-app link,
  
 
 # Steps Followed In Creating React-Chart-App
- prerequisites: node,npm installed with node, create-react-app
- 1.create a react app:  ```create-react-app react-chart-app ``` 
- 2.Install  rechart for displaying line graph ```npm install --save react-chartjs-2 chart.js``` 
- 3.create a component, use rechart for displaying line-chart and fetch, for access api
- 4.Run by using ```npm start```
+ prerequisites: node,npm installed with node, create-react-app,
+ 1. create a react app:  ```create-react-app react-chart-app ``` 
+ 2. Install  rechart for displaying line graph ```npm install --save react-chartjs-2 chart.js``` 
+ 3. create a component, use rechart for displaying line-chart and fetch, for access api
+ 4. Run by using ```npm start```
+
 
 
 # Steps Followed In Creating Aws-GoLang-Crud-DynamoDB
- Install serverless, awscli for creating aws-go project and configure aws in our local system
+ prerequisites: go installed,aws account, glance knowledge on terms like lambda, gateway,dynamodb, elasticbeanstalk, IAM.
+1.  Install serverless, awscli for creating aws-go project and configure aws in our local system
  ```npm i -g serverless```  
- we will get creditionals (access key, secret key) by creating a user in aws, IAM, use them to configure in awscli.
+ 2. we will get creditionals (access key, secret key) by creating a user in aws, IAM, use them to configure in awscli.
  ```serverless config credentials --provider provider --key key --secret secret.```
- we can use serverless to create aws-go project template, we can deploy once we done by using 
+ 3. we can use serverless to create aws-go project template, we can deploy once we done by using 
  ```serverless deploy --stage "stageName" --region "region name"``` 
 
 ### Project Structure (I have followed below the blog articles to do the entire project)
  ![project-structure](https://user-images.githubusercontent.com/47274869/99754642-d0f22a00-2b0e-11eb-8e4b-85114a3d4b01.jpg)
-
+ 
+### Here, we need to install required dependencies like aws-sdk for go,dynamodb,lambda-event ..so on. we can get them by using ```go get dependencyName```
   
 
 # Referernces
