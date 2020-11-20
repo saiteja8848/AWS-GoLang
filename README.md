@@ -49,11 +49,11 @@ Below is the deployed react-app link,
  ![project-structure](https://user-images.githubusercontent.com/47274869/99754642-d0f22a00-2b0e-11eb-8e4b-85114a3d4b01.jpg)
  
 ### Creating a Build and Zip file to upload in the go lambda, specify handler as main
-Install the tool provided by aws for deploying ```go.exe get -u github.com/aws/aws-lambda-go/cmd/build-lambda-zip
-set for environment ```set GOOS=linux 
-for creating build: ```go build -o main main.go```
-for creating zip file: go to your Go installed folder go\bin folder ```nbuild-lambda-zip.exe -o main.zip main```
-upload in aws lambda function, set handler to main, create a test and try to test there.
+1. Install the tool provided by aws for deploying ```go.exe get -u github.com/aws/aws-lambda-go/cmd/build-lambda-zip
+2. set for environment ```set GOOS=linux 
+3. for creating build: ```go build -o main main.go```
+4. for creating zip file: go to your Go installed folder go\bin folder ```nbuild-lambda-zip.exe -o main.zip main```
+5. Upload in aws lambda function, set handler to main, create a test and try to test there.
  
  
 ### Here, we need to install required dependencies like aws-sdk for go,dynamodb,lambda-event ..so on. we can get them by using ```go get dependencyName```
