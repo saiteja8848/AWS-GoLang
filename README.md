@@ -90,7 +90,8 @@ func handler(req events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse
 	}
 }
 ```
- 
+3.In handlers package,  code for above operations is present
+
 ### Here, we need to install required dependencies like aws-sdk for go,dynamodb,lambda-event ..so on. we can get them by using ```go get dependencyName```
   
 
