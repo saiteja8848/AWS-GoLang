@@ -28,20 +28,30 @@ Below is the deployed react-app link,
  
 
 # Steps Followed In Creating React-Chart-App
- 1.create a react app, ```create-react-app react-chart-app ``` 
-
+ prerequisites: node,npm installed with node, create-react-app
+ 1.create a react app:  ```create-react-app react-chart-app ``` 
+ 2.Install  rechart for displaying line graph ```npm install --save react-chartjs-2 chart.js``` 
+ 3.create a component, use rechart for displaying line-chart and fetch, for access api
+ 4.Run by using ```npm start```
 
 
 # Steps Followed In Creating Aws-GoLang-Crud-DynamoDB
  1. Install serverless, awscli for creating aws-go project and configure aws in our local system
+   a. ```npm i -g serverless```  
+   b. we will get creditionals (access key, secret key) by creating a user in aws, IAM, use them to configure in awscli.
+   c. serverless config credentials --provider provider --key key --secret secret.
+   d. we can use serverless to create aws-go project template, we can deploy once we done by using ```serverless deploy --stage "stageName" --region "region name"
 
+https://www.softkraft.co/aws-lambda-in-golang/#golang-aws-lambda-function-example
+https://dev.to/wingkwong/building-serverless-crud-services-in-go-with-dynamodb-part-1-2kec
 
 # Referernces
 1. https://www.softkraft.co/aws-lambda-in-golang/#golang-aws-lambda-function-example
 2. https://www.javacodegeeks.com/2018/11/build-restful-api-go-using-aws-lambda.html
 3. https://github.com/yosriady/serverless-crud-gohttps://github.com/yosriady/serverless-crud-go
-4. https://www.youtube.com/watch?v=Pa99PT16tmw
-5. https://youtu.be/T26V1aSEtJE
+4. https://dev.to/wingkwong/building-serverless-crud-services-in-go-with-dynamodb-part-1-2kec
+5. https://www.youtube.com/watch?v=Pa99PT16tmw
+6. https://youtu.be/T26V1aSEtJE
 
 
 
