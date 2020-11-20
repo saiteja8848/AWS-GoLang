@@ -59,7 +59,7 @@ class LineChart extends Component {
 			data: [],
 		});
 		fetch(
-			`http://javatechiecruddynamodb-env.eba-entwyq7a.ap-south-1.elasticbeanstalk.com/getCategorys`
+			`http://golangcruddynamodb-env.eba-jcmcekqk.ap-south-1.elasticbeanstalk.com/getCategorys`
 		)
 			.then((res) => res.json())
 			.then((res) => {
