@@ -36,15 +36,15 @@ Below is the deployed react-app link,
 
 
 # Steps Followed In Creating Aws-GoLang-Crud-DynamoDB
- 1. Install serverless, awscli for creating aws-go project and configure aws in our local system
- 2.```npm i -g serverless```  
- 3.we will get creditionals (access key, secret key) by creating a user in aws, IAM, use them to configure in awscli.
- 4.```serverless config credentials --provider provider --key key --secret secret.```
- 5.we can use serverless to create aws-go project template, we can deploy once we done by using 
- 6.```serverless deploy --stage "stageName" --region "region name"``` 
+ Install serverless, awscli for creating aws-go project and configure aws in our local system
+ ```npm i -g serverless```  
+ we will get creditionals (access key, secret key) by creating a user in aws, IAM, use them to configure in awscli.
+ ```serverless config credentials --provider provider --key key --secret secret.```
+ we can use serverless to create aws-go project template, we can deploy once we done by using 
+ ```serverless deploy --stage "stageName" --region "region name"``` 
 
-Project Structure (I have followed below the blog articles to do the entire project)
-![project-structure](https://user-images.githubusercontent.com/47274869/99754642-d0f22a00-2b0e-11eb-8e4b-85114a3d4b01.jpg)
+### Project Structure (I have followed below the blog articles to do the entire project)
+ ![project-structure](https://user-images.githubusercontent.com/47274869/99754642-d0f22a00-2b0e-11eb-8e4b-85114a3d4b01.jpg)
 
   
 
