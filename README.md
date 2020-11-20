@@ -57,7 +57,39 @@ Below is the deployed react-app link,
  
 ### structure for my table, code
 1. ```type Category struct { CategoryId   string `json:"categoryId"` Categoryname string `json:"categoryName"` Date string `json:"date"`Score int `json:"score"` }```
-2.  
+2.  main.go,start of program, package main
+```
+var (
+	dynaClient dynamodbiface.DynamoDBAPI
+)
+const tableName = "LambdaInGoUser" 
+func main() {
+	region := os.Getenv("AWS_REGION")
+	awsSession, err := session.NewSession(&aws.Config{
+		Region: aws.String(region)},
+	)
+	if err != nil {
+		return
+	}
+	dynaClient = dynamodb.New(awsSession)
+	lambda.Start(handler)
+}
+
+func handler(req events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
+	switch req.HTTPMethod {
+	case "GET":
+		return handlers.GetCategory(req, tableName, dynaClient)
+	case "POST":
+		return handlers.CreateCategory(req, tableName, dynaClient)
+	case "PUT":
+		return handlers.UpdateCategory(req, tableName, dynaClient)
+	case "DELETE":
+		return handlers.DeleteCategory(req, tableName, dynaClient)
+	default:
+		return handlers.UnhandledMethod()
+	}
+}
+```
  
 ### Here, we need to install required dependencies like aws-sdk for go,dynamodb,lambda-event ..so on. we can get them by using ```go get dependencyName```
   
