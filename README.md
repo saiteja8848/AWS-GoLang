@@ -22,7 +22,7 @@ Below is the deployed react-app link,
  API format
  ![response](https://user-images.githubusercontent.com/47274869/99750445-6ccb6800-2b06-11eb-9634-befc6d0953f8.jpg)
  
- In the above response, I am **using _score as mapping value on to the graph_**  
+ In the above response, I am **using _score as mapping value on to the graph_**.  
  
  http://golangcruddynamodb-env.eba-jcmcekqk.ap-south-1.elasticbeanstalk.com/getCategorys
  
