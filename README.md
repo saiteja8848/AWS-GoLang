@@ -55,6 +55,9 @@ Below is the deployed react-app link,
 4. for creating zip file: go to your Go installed folder go\bin folder ```nbuild-lambda-zip.exe -o main.zip main```
 5. Upload in aws lambda function, set handler to main, create a test and try to test there.
  
+### structure for my table, code
+1. ```type Category struct { CategoryId   string `json:"categoryId"` Categoryname string `json:"categoryName"` Date string `json:"date"`Score int `json:"score"` }```
+2.  
  
 ### Here, we need to install required dependencies like aws-sdk for go,dynamodb,lambda-event ..so on. we can get them by using ```go get dependencyName```
   
